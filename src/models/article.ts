@@ -1,6 +1,6 @@
 export interface Article {
     id: string;
-    summary: string;
+    description: string;
     tags: string[];
     date: string;
     language: string;

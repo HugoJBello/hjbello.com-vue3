@@ -1,5 +1,5 @@
 <template>
-  <div class="file">
+  <div>
     <FileReader :file-id="($route.params.fileId as string)"/>
   </div>
 </template>
@@ -18,7 +18,4 @@ export default defineComponent({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.file{
-  margin: 0 auto
-}
 </style>

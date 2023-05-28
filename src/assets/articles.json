@@ -1,13 +1,20 @@
 {
     "articles":[
         {
-            "id": "papers.es.md",
-            "tags":["Research"],
-            "title":"Research papers",
-            "summary": "List of my research papers",
-            "date": "2023-05-28T18:25:43.511Z",
-            "image":"test.png",
-            "language":"es"
+            "id":"papers.es",
+            "title": "Artículos",
+            "date": "2022-10-27T07:23:52.976Z",
+            "tags": ["Research", "Papers"],
+            "description": "mis artículos publicados y preprints",
+            "language": "es"
+        },
+        {
+            "id":"papers.en",
+            "title": "Papers",
+            "date": "2022-10-27T07:23:52.976Z",
+            "tags": ["Research", "Papers"],
+            "description": "Published research papers and preprints",
+            "language": "en"
         }
     ]
 }

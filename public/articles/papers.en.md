@@ -1,11 +1,11 @@
     
-## Artículos publicados
+## Published papers
 
 1. **Efficacy of a connected insulin pen cap in people with non-controlled type 1 diabetes mellitus: a multicenter randomized clinical trial**. 2022 - *Diabetes Care*  (journal-article) <sup>Fernando Gomez-Peralta; Cristina Abreu; Elsa Fernández-Rubio, Laura Cotovad; Pedro Pujante; Sonia Gaztambide; Diego Bellido; Edelmiro Menéndez Torre; Santiago Ruiz-Valdepeñas; Hugo Bello; Xoan Valledor; Jesús Pérez-González; Luis Ruiz-Valdepeñas</sup>
 
 1. **Diagnostic stability of schizophrenia in clinical settings: An observational study of 198,289 patient/years**. 2022 - *Schizophrenia Research*  (journal-article) *[https://doi.org/10.1016/j.schres.2022.05.017](https://doi.org/10.1016/j.schres.2022.05.017).* <sup>NoraPalomar-Ciria, Fanny Cegla-Schvartzman, Hugo J.Bello, Gonzalo Martínez-Alés, Marta Migoya-Borja, Enrique Baca-García</sup>
 
-1. **Nitric Oxide Inducing Factors on Serum Minerals Changes in Older  People Susceptible to Suffer Sarcopenia**. 2022 - *International Journal of Environmental Research and Public Health*  (journal-article) *[https://doi.org/10.3390/ijerph19105938](https://doi.org/10.3390/ijerph19105938).* <sup>Alfredo Córdova, Alberto Caballero-García, David Noriega-González, Hugo J Bello, Antoni Pons, Enrique Roche</sup>
+1. **Nitric-Oxide-Inducing Factors on Vitamin D Changes in Older People Susceptible to Suffer from Sarcopenia**. 2022 - *International Journal of Environmental Research and Public Health*  (journal-article) *[https://doi.org/10.3390/ijerph19105938](https://doi.org/10.3390/ijerph19105938).* <sup>Alfredo Córdova, Alberto Caballero-García , David Noriega-González , Hugo J Bello , Antoni Pons, Enrique Roche</sup>
 
 1. **Suicide Classification for News Media Using Convolutional Neural Networks**. 2022 - *Health Communication*  (journal-article) *[https://doi.org/10.1080/10410236.2022.2058686](https://doi.org/10.1080/10410236.2022.2058686).*
 
@@ -56,7 +56,7 @@
 1. **Extending Topological Abelian Groups by the Unit Circle**. 2013 - *Abstract and Applied Analysis*  (journal-article) *[https://doi.org/10.1155/2013/590159](https://doi.org/10.1155/2013/590159).* <sup>Hugo J. Bello , María Jesús Chasco, and Xabier Domínguez</sup>
 
 
-## Preprints de Artículos
+## Preprints
 
 1. **Suicide Classificaction for News Media Using Convolutional Neural Network**. 2021 - *undefined* *[http://arxiv.org/abs/2103.03727v1](http://arxiv.org/abs/2103.03727v1).* <sup>Hugo J. Bello, Nora Palomar-Ciria, Enrique Baca-García, Celia Lozano</sup>
 

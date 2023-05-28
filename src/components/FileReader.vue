@@ -5,7 +5,7 @@
       <h1 >{{article.title }}</h1>
       <div class="separator"></div>
 
-      <img :src="imageUrl" class="rounded img-fluid" alt="..."/>
+      <img v-if="imageUrl" :src="imageUrl" class="rounded img-fluid" alt="..."/>
       <b></b>
       <div class="separator"></div>
       <div class="separator"></div>
@@ -50,9 +50,9 @@
         if (this.article.image){
           this.imageUrl = this.getUrl() + "/img/articleImages/" + this.article.image
           console.log(this.imageUrl)
-        }
+        } 
 
-        const resp = await axios.get(this.getUrl() + "/articles/" +this.fileId)
+        const resp = await axios.get(this.getUrl() + "/articles/" +this.fileId + ".md")
         this.article.text = resp.data
         console.log(this.article)
       },
@@ -68,7 +68,6 @@
         languageStorage.$onAction(({name:useLanguage, args}:any)=>{
           const url = args[0]      
           this.language = url
-          console.log("---", url)
         }, true)
         await this.getFileArticle()
     },

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ArticleView from '../views/ArticleView.vue'
+import Papers from '../views/Papers.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -9,9 +10,14 @@ const routes: Array<RouteRecordRaw> = [
     component: HomeView
   },
   {
-    path: '/article/:fileId',
+    path: '/posts/:fileId',
     name: 'article',
     component: ArticleView
+  },
+  {
+    path: '/papers',
+    name: 'papers',
+    component: Papers
   },
   {
     path: '/about',

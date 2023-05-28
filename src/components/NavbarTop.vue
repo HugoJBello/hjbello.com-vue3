@@ -77,7 +77,6 @@
         languageStorage.$onAction(({name:useLanguage, args}:any)=>{
           const url = args[0]      
           this.language = url
-          console.log("---", url)
         }, true)
     },
     updated() {

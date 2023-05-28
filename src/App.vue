@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import NavbarTop from "./components/NavbarTop.vue";
+import SetupInit from "./components/SetupInit.vue";
 
 </script>
 
 <template>
-  <div>
+  <div class="bg-light">
     <NavbarTop />
     
-    
-    <RouterView class="bg-light"/>
+    <RouterView/>
+    <SetupInit></SetupInit>
   </div>
 </template>
 
