@@ -1,9 +1,13 @@
 <template>
-    <div class="container">
-      <h1 class="h1">{{article.title }}</h1>
+    <div class="container-article">
+      <div class="separator"></div>
+
+      <h1 >{{article.title }}</h1>
+      <div class="separator"></div>
 
       <img :src="imageUrl" class="rounded img-fluid" alt="..."/>
-
+      <b></b>
+      <div class="separator"></div>
       <div class="separator"></div>
       <Markdown :source="article.text"></Markdown>
     </div>
@@ -81,9 +85,9 @@
 
 :deep(a:link) { text-decoration: none; }
 
-.container {
-  margin: 0 auto !important;
-  max-width: 60 px !important;
+.container-article {
+  margin: 0 auto;
+  max-width: 760px;
 }
 .separator{
   margin-bottom: 25px;
