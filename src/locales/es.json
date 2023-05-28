@@ -1,5 +1,9 @@
-{"Papers":"Artículos",
+{
+"pageName": "Página de Hugo J. Bello",
+"Papers":"Artículos",
 "Research":"Investigación",
 "About": "Acerca de",
-"Projects":"Proyectos"
+"Projects":"Proyectos",
+"Teaching":"Docencia",
+"none":"none"
 }

@@ -7,7 +7,8 @@ import NavbarTop from "./components/NavbarTop.vue";
 <template>
   <div>
     <NavbarTop />
-    <RouterView />
+    
+    <RouterView class="bg-light"/>
   </div>
 </template>
 

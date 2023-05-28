@@ -1,5 +1,9 @@
-{"Papers":"Papers",
+{
+"pageName": "Hugo J. Bello page",
+"Papers":"Papers",
 "Research":"Research",
 "About": "About",
-"Projects":"Projects"
+"Projects":"Projects",
+"Teaching":"Teaching",
+"none":"none"
 }

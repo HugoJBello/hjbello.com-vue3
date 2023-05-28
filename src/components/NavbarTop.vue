@@ -6,19 +6,32 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="/">Hugo J. Bello page</a>
+          <a class="navbar-brand" href="/">{{ $t("pageName") }}</a>
           
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/">{{ $t("Papers") }}</RouterLink>
+              <RouterLink class="nav-link" to="/home">{{ $t("Home") }}</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/papers">{{ $t("Papers") }}</RouterLink>
             </li>
   
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/server">Server</RouterLink>
+              <RouterLink class="nav-link" to="/about">{{ $t("About") }}</RouterLink>
             </li>
-            
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/projects">{{ $t("Projects") }}</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/teaching">{{ $t("Teaching") }}</RouterLink>
+            </li>
           </ul>
-          
+          <div class="d-flex">    
+        <select v-model="selected" @change="languageSelected($event)" class="dropdown" data-bs-theme="dark">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+        </select>
+        </div>
         </div>
       </div>
   
@@ -32,24 +45,40 @@
   </style>
   
   <script lang="ts">
+  import { mapActions } from "pinia";
+  import { useLanguage } from "@/stores/language";
   import { useI18n } from "vue-i18n";
   import { defineComponent, watch } from "vue";
   export default defineComponent({
     name: 'NavbarTop',
     setup(){
       const i18n = useI18n();
-       return {i18n}
+      const languageStorage = useLanguage();
+       return {i18n, languageStorage}
     },
     data() {
       return {
+        language:"en",
+        selected:"en"
       };
     },
     methods: {
-
+      languageSelected(event: any){
+        this.language = event.target.value
+        console.log(this.language)
+        this.setLanguage(this.language)
+        this.$i18n.locale = this.language
+      },
+      ...mapActions(useLanguage, ['setLanguage']),
     },
   
     created() {
-        console.log("SUPUT")
+        const languageStorage = useLanguage();
+        languageStorage.$onAction(({name:useLanguage, args}:any)=>{
+          const url = args[0]      
+          this.language = url
+          console.log("---", url)
+        }, true)
     },
     updated() {
       //this.getSources();
