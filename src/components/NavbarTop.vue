@@ -10,7 +10,7 @@
           
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Papers</RouterLink>
+              <RouterLink class="nav-link" to="/">{{ $t("Papers") }}</RouterLink>
             </li>
   
             <li class="nav-item">
@@ -32,10 +32,14 @@
   </style>
   
   <script lang="ts">
-  
-  import { defineComponent } from "vue";
+  import { useI18n } from "vue-i18n";
+  import { defineComponent, watch } from "vue";
   export default defineComponent({
     name: 'NavbarTop',
+    setup(){
+      const i18n = useI18n();
+       return {i18n}
+    },
     data() {
       return {
       };
