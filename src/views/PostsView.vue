@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PostsList/>
+    <div class="container-posts">
+      <h1>{{$t("Posts list") }}</h1>
+
+      <PostsList/>
+    </div>
+    
   </div>
 </template>
 
@@ -18,4 +23,7 @@ export default defineComponent({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.container-posts{
+  margin: 0 auto;
+}
 </style>

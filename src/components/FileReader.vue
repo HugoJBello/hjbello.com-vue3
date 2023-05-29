@@ -5,7 +5,7 @@
       <h1 >{{article.title }}</h1>
       <div class="separator"></div>
 
-      <img v-if="imageUrl" :src="imageUrl" class="rounded img-fluid" alt="..."/>
+      <img v-if="imageUrl && article.show_starting_image" :src="imageUrl" class="rounded img-fluid imgcontainer" alt="..."/>
       <b></b>
       <div class="separator"></div>
       <div class="separator"></div>
@@ -46,11 +46,13 @@
     methods: {
       async getFileArticle(){
         this.article = articles.articles.find((item)=>item.id == this.fileId) as Article
-
-        if (this.article.image && ! this.article.image.includes("https://")){
+        if (this.article.show_starting_image === undefined) {
+          this.article.show_starting_image = true;
+        }
+        if (this.article.image && ! this.article.image.includes("https://") && ! this.article.image.includes("data:image/") ){
           this.imageUrl = this.getUrl() + "/img/articleImages/" + this.article.image
           console.log(this.imageUrl)
-        } else if (this.article.image && this.article.image.includes("https://")) {
+        } else if (this.article.image && (this.article.image.includes("https://") || this.article.image.includes("data:image/"))) {
           this.imageUrl = this.article.image
         }
 
@@ -89,6 +91,7 @@
 .container-article {
   margin: 0 auto;
   max-width: 760px;
+  padding: 10px;
 }
 .separator{
   margin-bottom: 25px;
@@ -96,7 +99,7 @@
 .imgcontainer {
   padding-top: 10px;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .content-text {

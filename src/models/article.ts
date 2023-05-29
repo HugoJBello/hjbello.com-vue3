@@ -7,4 +7,6 @@ export interface Article {
     title: string;
     image: string;
     text?: string;
+    show_starting_image: boolean;
+
   }

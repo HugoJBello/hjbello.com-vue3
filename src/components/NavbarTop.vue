@@ -6,12 +6,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="/">{{ $t("pageName") }}</a>
+          <RouterLink class="navbar-brand" to="/">{{ $t("pageName") }}</RouterLink>
           
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <RouterLink class="nav-link" to="/home">{{ $t("Home") }}</RouterLink>
-            </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/papers">{{ $t("Papers") }}</RouterLink>
             </li>
