@@ -1,14 +1,3 @@
----
-title: "Investigación"
-tags: ["Research"]
-categories: ["Research"]
-date: 2022-10-26T18:10:06+01:00
-toc: true
-description: Los grupos de investigación con los que trabajo y mis intereses
-language: es
-menu:
-  main: {}
----
 
 ## Investigación
 En estos momentos colaboro con los siguientes proyectos

@@ -1,8 +1,6 @@
 <template>
-  <div class="hello">
-    
-    <PostsList></PostsList>
-     
+  <div>
+    <PostsList/>
   </div>
 </template>
 
@@ -13,12 +11,11 @@ import PostsList from '@/components/PostsList.vue'; // @ is an alias to /src
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Home',
-  components:{PostsList}
+  name: 'PostsView',
+  components:{PostsList},
 });
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 </style>

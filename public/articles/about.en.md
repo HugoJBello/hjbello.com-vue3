@@ -1,17 +1,4 @@
----
-title: "About"
-date: 2019-10-26T18:10:06+01:00
-categories: ["About"]
-language: en
-description: some stuff about me and my work
-image: https://avatars2.githubusercontent.com/u/18718281?s=460&v=4
-translationKey: About
-tags: ["About", "Teaching", "Coding"]
-menu:
-  main: {}
----
 
-![image](https://avatars2.githubusercontent.com/u/18718281?s=460&v=4 "Logo Title Text 1")
 
 
 I am a teacher at the [University of Valladolid in Soria](https://campusdesoria.uva.es/). I am also full-stack software developer at [insulcloud](https://insulclock.com/). I also work as freelance sometimes. You can contact me at hjbello.wk@protonmail.com.

@@ -15,7 +15,9 @@
             <li class="nav-item">
               <RouterLink class="nav-link" to="/papers">{{ $t("Papers") }}</RouterLink>
             </li>
-  
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/research">{{ $t("Research") }}</RouterLink>
+            </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/about">{{ $t("About") }}</RouterLink>
             </li>

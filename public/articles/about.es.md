@@ -1,17 +1,4 @@
----
-title: "Acerca De"
-date: 2019-10-26T18:10:06+01:00
-translationKey: About
-language: es
-description: cosas acerca de mi y mi trabajo
-image: https://avatars2.githubusercontent.com/u/18718281?s=460&v=4
-categories: ["About"]
-tags: ["About", "Teaching", "Coding"]
-menu:
-  main: {}
----
 
-![image](https://avatars2.githubusercontent.com/u/18718281?s=460&v=4 "Logo Title Text 1")
 
 Soy profesor ayudante doctor en [La Universidad de Valladolid, campus Soria](https://campusdesoria.uva.es/). Soy desarrollador full-stack en [insulcloud](https://insulclock.com/). En ocasiones trabajo como analísta de datos y desarrollador freelancer, contáctame en hjbello.wk@protonmail.com.
 

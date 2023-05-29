@@ -1,15 +1,6 @@
 <template>
-    <div class="container-article">
-      <div class="separator"></div>
-
-      <h1 >{{article.title }}</h1>
-      <div class="separator"></div>
-
-      <img v-if="imageUrl" :src="imageUrl" class="rounded img-fluid" alt="..."/>
-      <b></b>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <Markdown :source="article.text"></Markdown>
+    <div class="container-list">
+      <h1>{{$t("Posts list") }}</h1>
     </div>
   </template>
   
@@ -21,12 +12,9 @@
   import { defineComponent, watch } from "vue";
   import articles from '@/assets/articles.json';
   import {Article} from '@/models/article';
-  import axios from 'axios';
-  import Markdown from 'vue3-markdown-it';
 
   export default defineComponent({
-    components:{Markdown},
-    name: 'FileReader',
+    name: 'PostsList',
     props: {
     fileId: String,
     },
@@ -40,27 +28,10 @@
         language:"en",
         text:"",
         imageUrl: "",
-        article: {} as Article
+        articles: articles.articles as Article[]
       };
     },
     methods: {
-      async getFileArticle(){
-        this.article = articles.articles.find((item)=>item.id == this.fileId) as Article
-
-        if (this.article.image && ! this.article.image.includes("https://")){
-          this.imageUrl = this.getUrl() + "/img/articleImages/" + this.article.image
-          console.log(this.imageUrl)
-        } else if (this.article.image && this.article.image.includes("https://")) {
-          this.imageUrl = this.article.image
-        }
-
-        const resp = await axios.get(this.getUrl() + "/articles/" +this.fileId + ".md")
-        this.article.text = resp.data
-        console.log(this.article)
-      },
-      getUrl(){
-        return window.location.origin
-      },
       ...mapActions(useLanguage, ['setLanguage']),
     },
   
@@ -71,7 +42,6 @@
           const url = args[0]      
           this.language = url
         }, true)
-        await this.getFileArticle()
     },
     updated() {
       //this.getSources();

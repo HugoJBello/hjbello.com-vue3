@@ -1,13 +1,3 @@
----
-title: "Proyectos"
-date: 2022-10-26T18:10:06+01:00
-draft: false
-translationKey: Proyectos
-language: es
-description: algunos proyectos interesantes en los que estoy trabajando
-categories: ["Research"]
-tags: ["Research", "Coding"]
----
 
 Aquí algunos proyectos interesantes en los que estoy trabajando
 - Trabajo en la Universidad de Valladolid (Campus Soria) como profesor ayudante doctor, en el departamento de Matemática Aplicada, investigando y impartiendo clases principalmente en la escuela de la Ingeniería Forestal y en La Facultad de Empresariales.

@@ -15,6 +15,77 @@
             "tags": ["Research", "Papers"],
             "description": "Published research papers and preprints",
             "language": "en"
+        },
+        {
+            "id": "about.en",
+            "title": "About",
+            "date": "2019-10-26T18:10:06+01:00",
+            "language": "en",
+            "description": "some details about me and my work",
+            "image": "https://avatars2.githubusercontent.com/u/18718281?s=460&v=4",
+            "tags": ["About", "Teaching", "Coding"]
+        },
+        {
+            "id": "about.es",
+            "title": "Acerca de mi",
+            "date": "2019-10-26T18:10:06+01:00",
+            "language": "es",
+            "description": "Algunos detalles a cerca de mi trabajo",
+            "image": "https://avatars2.githubusercontent.com/u/18718281?s=460&v=4",
+            "tags": ["About", "Teaching", "Coding"]
+        },
+        {
+            "id": "cool_projects.en",
+            "title": "Cool Projects",
+            "date": "2019-10-26T18:10:06+01:00",
+            "language": "en",
+            "description": "some cool projects I'm working on",
+            "categories": ["Research"],
+            "tags": ["Research", "Coding"]
+        },
+         {
+            "id": "cool_projects.es",
+            "title": "Proyectos interesantes",
+            "date": "2019-10-26T18:10:06+01:00",
+            "language": "es",
+            "description": "Algunos proyectos en los que he trabajado y trabajo",
+            "tags": ["Research", "Coding"]
+        },
+        {   
+            "id":"docencia.en",
+            "title": "Teaching",
+            "date": "2020-10-26T18:10:06+01:00",
+            "image": "https://img.youtube.com/vi/4J_BgKyR7G0/0.jpg",
+            "description": "my teaching, current and old teaching materials",
+            "language": "en",
+            "tags": ["Teaching"]
+        },
+        {
+            "id":"docencia.es",
+            "title": "Docencia",
+            "date": "2020-10-26T18:10:06+01:00",
+            "image": "https://img.youtube.com/vi/4J_BgKyR7G0/0.jpg",
+            "description": "Mi docencia presente y de años anteriores",
+            "language": "es",
+            "tags": ["Teaching"]
+        },
+        {
+            "id": "research.en" ,
+            "title": "Research" ,
+            "tags": ["Research"],
+            "categories": ["Research"],
+            "date": "2022-10-26T18:10:06+01:00",
+            "description": "my current research groups and interests",
+            "language": "en"
+        },
+        {
+            "id": "research.es" ,
+            "title": "investigación" ,
+            "tags": ["Research"],
+            "categories": ["Research"],
+            "date": "2022-10-26T18:10:06+01:00",
+            "description": "Mi investigación, los grupos en los que participo y mis intereses investigadores.",
+            "language": "en"
         }
     ]
 }

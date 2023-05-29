@@ -1,13 +1,3 @@
----
-title: "Cool Projects"
-date: 2019-10-26T18:10:06+01:00
-draft: false
-translationKey: Projects
-language: en
-description: some cool projects I'm working on
-categories: ["Research"]
-tags: ["Research", "Coding"]
----
 
 There are some interesting projects that want to list here because I had a lot of fun doing them:
 - I work at the University of Valladolid (Campus Soria), at the department of Applied Mathematics researching and teaching at Escuela de Ingeniería Forestal and Facultad de Empresariales.

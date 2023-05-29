@@ -1,14 +1,3 @@
----
-title: "Research"
-tags: ["Research"]
-categories: ["Research"]
-date: 2022-10-26T18:10:06+01:00
-toc: true
-description: my current research groups and interests
-language: en
-menu:
-  main: {}
----
 
 ## Research
 
