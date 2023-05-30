@@ -23,6 +23,7 @@
   import {Article} from '@/models/article';
   import axios from 'axios';
   import Markdown from 'vue3-markdown-it';
+  import { getImage } from "@/services/articlesService";
 
   export default defineComponent({
     components:{Markdown},
@@ -49,12 +50,9 @@
         if (this.article.show_starting_image === undefined) {
           this.article.show_starting_image = true;
         }
-        if (this.article.image && ! this.article.image.includes("https://") && ! this.article.image.includes("data:image/") ){
-          this.imageUrl = this.getUrl() + "/img/articleImages/" + this.article.image
-          console.log(this.imageUrl)
-        } else if (this.article.image && (this.article.image.includes("https://") || this.article.image.includes("data:image/"))) {
-          this.imageUrl = this.article.image
-        }
+
+        this.imageUrl = getImage(this.article)
+        console.log(this.article.image)
 
         const resp = await axios.get(this.getUrl() + "/articles/" +this.fileId + ".md")
         this.article.text = resp.data

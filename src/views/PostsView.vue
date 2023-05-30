@@ -25,5 +25,6 @@ export default defineComponent({
 <style scoped lang="scss">
 .container-posts{
   margin: 0 auto;
+  padding-left: 10px;
 }
 </style>

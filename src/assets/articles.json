@@ -23,7 +23,7 @@
         {
             "id": "about.en",
             "title": "About",
-            "date": "2019-10-26T18:10:06+01:00",
+            "date": "2023-05-26T18:10:06+01:00",
             "language": "en",
             "description": "some details about me and my work",
             "image": "https://avatars2.githubusercontent.com/u/18718281?s=460&v=4",
@@ -32,7 +32,7 @@
         {
             "id": "about.es",
             "title": "Acerca de mi",
-            "date": "2019-10-26T18:10:06+01:00",
+            "date": "2023-05-26T18:10:06+01:00",
             "language": "es",
             "description": "Algunos detalles a cerca de mi trabajo",
             "image": "https://avatars2.githubusercontent.com/u/18718281?s=460&v=4",

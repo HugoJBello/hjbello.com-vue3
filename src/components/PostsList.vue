@@ -1,21 +1,20 @@
 <template>
-  <div class="m-10">
-    <div class="container-list">
-      <RouterLink v-for="item in articles" :value="item" :key="item.id" :to="'/posts/'+item.id" class="card mb-4 card-cust" style="max-width: 540px;">
-        <div class="row">
-          <div class="col-4">
-            <img :src="item.image" class="img-fluid rounded-start" alt="">
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">{{ item.title }}</h5>
-              <p class="card-text">{{ item.description }}</p>
-              <p class="card-text"><small class="text-muted">{{ item.date }}</small></p>
-            </div>
-          </div>
-        </div>
-      </RouterLink>
-    </div>
+  <div class="container-list">
+    <MasonryWall :items="articles"  :gap="0" >
+      <template #default="{ item, index }">
+    <RouterLink :to="'/posts/'+item.id" :column-width="100" class="card post-card" style="width: 18rem;">
+      <img :src="item.image" class="card-img-top" alt="...">
+      <div :href="index" class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">{{ item.description }}</p>
+      </div>
+      <div class="card-footer">
+        {{ parseDate(item.dateParsed) }}
+      </div>
+    
+    </RouterLink>
+  </template>
+  </MasonryWall>
   </div>
   </template>
   
@@ -27,8 +26,14 @@
   import { defineComponent, watch } from "vue";
   import articles from '@/assets/articles.json';
   import {Article} from '@/models/article';
-
+  import MasonryWall from '@yeger/vue-masonry-wall'
+  import { getImage, filterLanguageParsingDate } from "@/services/articlesService";
+  import moment from 'moment'
+  
   export default defineComponent({
+    components:{
+      MasonryWall
+    },
     name: 'PostsList',
     props: {
     fileId: String,
@@ -48,31 +53,31 @@
     },
     methods: {
       getArticles(language: string){
-        this.articles = articles.articles.filter((article)=>article.language == language) as Article[]
+        this.articles = filterLanguageParsingDate(articles.articles as Article[], language) as Article[]
+
         this.getImages()
         console.log(this.articles,this.languageStorage.getLanguage)
       },
       getUrl(){
         return window.location.origin
       },
+      parseDate(date: string){
+        moment.locale(this.language)
+        const dateParsed  = moment(date)
+        return dateParsed.fromNow()
+      },
       getImages(){
-        for (let i=0; i < this.articles.length; i++){
-          const article = this.articles[i]
-          if (article.image && ! article.image.includes("https://") && ! article.image.includes("data:image/")){
-            this.articles[i].image = this.getUrl() + "/img/articleImages/" + article.image
-
-          } else if (article.image && (article.image.includes("https://") || article.image.includes("data:image/"))) {
-            this.articles[i].image = article.image
-        }
-
- 
-        }
+         this.articles = this.articles.map((article) => {
+            article.image = getImage(article)
+            return article
+         })
       },
       ...mapActions(useLanguage, ['setLanguage']),
     },
   
     async created() {
         this.getArticles(this.languageStorage.getLanguage)
+
         const languageStorage = useLanguage();
         languageStorage.$onAction(({name:useLanguage, args}:any)=>{
           const url = args[0]      
@@ -96,19 +101,21 @@ a{
 }
 :deep(a:link) { text-decoration: none; }
 
-@media (min-width: 1000px) {
-  .card-cust{
-    width: 1000px;
-  } 
-}
+.post-card{
+  margin-left: 30px;
+  margin-bottom: 30px;
+  @media (min-width: 1250px) {
+    margin-left: 80px;
 
+  }
+}
 .out-list {
   margin: 10px
 }
-   .container-list {
-    margin: 0 auto;
-    max-width: 500px;
-  }
+.container-list {
+margin: 0 auto;
+
+}
 
 
   </style>
