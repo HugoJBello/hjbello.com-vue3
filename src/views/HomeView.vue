@@ -2,6 +2,7 @@
   <div>
     <div class="container-posts">
       <br>
+      <div class="info-container">
       <div class="card text-dark   info-card" >
         <div class="card-body">
           <h5 class="card-title">{{$t("Welcome to my page")}}</h5>
@@ -12,6 +13,7 @@
           <RouterLink :to="'/about'" class="card-link">{{$t('More about me')}}</RouterLink>
         </div>
       </div>
+    </div>
       
       <br>
       <br>
@@ -39,6 +41,9 @@ export default defineComponent({
 .container-posts{
   margin: 0 auto;
   max-width: 900px;
+}
+.info-container{
+  margin:5px;
 }
 
 .info-card{

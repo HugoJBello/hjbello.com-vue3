@@ -102,7 +102,8 @@ a{
 :deep(a:link) { text-decoration: none; }
 
 .post-card{
-  margin-left: 30px;
+  margin-left: 45px;
+  margin-right: 45px;
   margin-bottom: 30px;
   @media (min-width: 1250px) {
     margin-left: 80px;
