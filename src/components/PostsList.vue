@@ -18,7 +18,7 @@
       </MasonryWall>
     </div>
 
-    <div class="small-container" v-if="innerWidth < heightLimit || heightLimit == heightLimit">
+    <div class="small-container" v-if="innerWidth < heightLimit || innerWidth == heightLimit">
           <RouterLink v-for="item of articles" :to="'/posts/' + item.id" :key="item.id" :column-width="100" class="card small-container">
             <img :src="item.image" class="card-img-top" alt="...">
             <div   class="card-body">
