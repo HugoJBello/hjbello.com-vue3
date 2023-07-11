@@ -1,5 +1,7 @@
 ## Published papers
 
+1. **Diagnostic trajectories of mental disorders in children and adolescents: a cohort study**. 2023 (article). *European Child and Adolescent Psychiatry*. Braulio Girela-Serrano, Carolina Miguélez-Fernández, Sofía Abascal-Peiró, Inmaculada Peñuelas-Calvo, Laura Jiménez-Muñoz, Manon Moreno, David Delgado-Gómez, Hugo J. Bello, Dasha Nicholls, Enrique Baca-García, Juan José Carballo, Alejandro Porras-Segovia. [https://doi.org/10.1007%2Fs00787-023-02254-0](https://doi.org/10.1007%2Fs00787-023-02254-0)
+
 1. **Equine-Assisted Therapy in Post-Traumatic-Stress Disorder: a Systematic Review and Meta-Analysis**. 2023 (article). *Journal of Equine Veterinary Science*. Nora Palomar-Ciria and Hugo J. Bello. [https://doi.org/10.1016%2Fj.jevs.2023.104871](https://doi.org/10.1016%2Fj.jevs.2023.104871)
 
 1. **Synthetic Dataset of Electroluminescence Images of Photovoltaic Cells by Deep Convolutional Generative Adversarial Networks**. 2023 (article). *Sustainability*. Héctor Felipe Mateo Romero, Luis Hernández-Callejo, Miguel Ángel González Rebollo, Valentín Cardeñoso-Payo, Victor Alonso Gómez, Hugo Jose Bello, Ranganai Tawanda Moyo, Jose Ignacio Morales Aragonés. [https://doi.org/10.3390/su15097175](https://doi.org/10.3390/su15097175)
