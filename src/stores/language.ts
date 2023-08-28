@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 export const useLanguage = defineStore({
   // id is required so that Pinia can connect the store to the devtools
   id: "language",
-  state: () => ({ language: "en"}),
+  state: () => ({ language: "es"}),
   getters: {
     // automatically infers the return type as a number
     getLanguage(state): string {

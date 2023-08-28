@@ -57,8 +57,8 @@
     },
     data() {
       return {
-        language:"en",
-        selected:"en"
+        language:"es",
+        selected:"es"
       };
     },
     methods: {
@@ -72,6 +72,18 @@
     },
   
     created() {
+        const locale = this.i18n.locale
+        console.log(locale)
+        if (locale.value == "es") {
+          this.language = "es"
+          this.setLanguage("es")
+          this.selected = "es"
+        } else {
+          this.language = "en"
+          this.setLanguage("en")
+          this.selected = "en"
+        }
+
         const languageStorage = useLanguage();
         languageStorage.$onAction(({name:useLanguage, args}:any)=>{
           const url = args[0]      
