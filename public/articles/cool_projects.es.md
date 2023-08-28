@@ -1,7 +1,8 @@
 
 Aquí algunos proyectos interesantes en los que estoy trabajando
 - Trabajo en la Universidad de Valladolid (Campus Soria) como profesor ayudante doctor, en el departamento de Matemática Aplicada, investigando y impartiendo clases principalmente en la escuela de la Ingeniería Forestal y en La Facultad de Empresariales.
-- Trabajo mediante un contrato de investigación con la UVA, para [insulcloud](https://insulclock.com/). Estamos desarrollando un sistema 360 para ayudar a las personas con diabetes mediante Machine Learning.
+- Trabajo mediante un contrato de investigación (art. 63 / art. 90) con la UVA, para el departamento de inteligencia artificial de [SERMES CRO](https://www.sermescro.com/).
+- Trabajé mediante un contrato de investigación con la UVA, para [insulcloud](https://insulclock.com/). En este tiempo participé en el desarrollo de un sistema 360 para ayudar a las personas con diabetes mediante Machine Learning.
 - Trabajé para [Universal Health Chain](https://www.universal-chain.com/). Contribuí en el desarrollo de un identificador universal de salud para comunicar pacientes y personal sanitario usando encriptación punto a punto y blockchain. Trabajo principalmente con *golang*, *nodejs*, *react (web y native)*, *python (keras, pandas, tensorflow)*.
 - Colaboré con el proyecto de software libre [Driver UE](https://www.driver-project.eu/). Este es un proyecto para la comunicación en caso de emergencias de la unión europea. Yo trabajé en el conector python.
 - Colaboré con [Peluditos OWS](https://github.com/OSW-Peludos/peluditos-project). Este proyecto conecta animales perdidos con sus dueños mediante machine learning y tecnologías web.
@@ -11,9 +12,4 @@ Aquí algunos proyectos interesantes en los que estoy trabajando
 
 [b](https://drive.google.com/drive/folders/1OhtLXEZPH8bqgoj5sGvWG7HeIve1hObm?usp=sharing)
 
-<!--
-tags: research, coding
-title: Cool projects
-date: 07/11/2019
--->
-
+ 

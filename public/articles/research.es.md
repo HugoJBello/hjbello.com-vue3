@@ -21,9 +21,4 @@ Puedes ver más también aquí
 - [orcid](https://orcid.org/0000-0002-3687-1938)
 - [arxiv](https://arxiv.org/search/?searchtype=author&query=Bello%2C+H+J&order=-announced_date_first&size=50&abstracts=show)
 
-<!--
-tags: research
-title: Research
-date: 21/10/2020
--->
-
+ 

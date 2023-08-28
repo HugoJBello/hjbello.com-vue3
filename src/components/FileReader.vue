@@ -95,6 +95,7 @@
   margin-bottom: 25px;
 }
 .imgcontainer {
+  text-align: center;
   padding-top: 10px;
   margin: 0 auto;
   max-width: 400px;

@@ -5,7 +5,7 @@
             "title": "Artículos",
             "image":"data:image/png;base64,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",
             "show_starting_image":false,
-            "date": "2022-10-27T07:23:52.976Z",
+            "date": "2023-08-27T07:23:52.976Z",
             "tags": ["Research", "Papers"],
             "description": "mis artículos publicados y preprints",
             "language": "es"
@@ -15,7 +15,7 @@
             "title": "Papers",
             "image":"data:image/png;base64,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",
             "show_starting_image":false,
-            "date": "2022-10-27T07:23:52.976Z",
+            "date": "2023-08-27T07:23:52.976Z",
             "tags": ["Research", "Papers"],
             "description": "Published research papers and preprints",
             "language": "en"
@@ -41,24 +41,26 @@
         {
             "id": "cool_projects.en",
             "title": "Cool Projects",
-            "date": "2019-10-26T18:10:06+01:00",
+            "date": "2023-08-27T07:23:52.976Z",
             "language": "en",
             "description": "some cool projects I'm working on",
+            "image": "projects.png",
             "categories": ["Research"],
             "tags": ["Research", "Coding"]
         },
          {
             "id": "cool_projects.es",
             "title": "Proyectos interesantes",
-            "date": "2019-10-26T18:10:06+01:00",
+            "date": "2023-08-27T07:23:52.976Z",
             "language": "es",
             "description": "Algunos proyectos en los que he trabajado y trabajo",
+            "image": "projects.png",
             "tags": ["Research", "Coding"]
         },
         {   
             "id":"docencia.en",
             "title": "Teaching",
-            "date": "2020-10-26T18:10:06+01:00",
+            "date": "2023-08-27T07:23:52.976Z",
             "image": "https://img.youtube.com/vi/4J_BgKyR7G0/0.jpg",
             "description": "my teaching, current and old teaching materials",
             "language": "en",
@@ -67,7 +69,7 @@
         {
             "id":"docencia.es",
             "title": "Docencia",
-            "date": "2020-10-26T18:10:06+01:00",
+            "date": "2023-08-27T07:23:52.976Z",
             "image": "https://img.youtube.com/vi/4J_BgKyR7G0/0.jpg",
             "description": "Mi docencia presente y de años anteriores",
             "language": "es",
