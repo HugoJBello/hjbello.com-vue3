@@ -1,5 +1,7 @@
 ## Published papers
 
+1. **Examining the relationship between COVID-19 and suicide in media coverage through natural language processing analysis**. 2024 (article). *The European Journal of Psychiatry*. Bello, Hugo J and Palomar-Ciria, Nora and Lozano, Celia and Guti{\'e}rrez-Alonso, Carlos and Baca-Garc{\'\i}a, Enrique.
+
 1. **Big Data Techniques to Study the Impact of Gender-Based Violence in the Spanish News Media**. 2023 (article). *Central European Journal of Communication*. Hugo J. Bello , Nora Palomar-Ciria, Elisa Gallego, Lourdes Jiménez Navascués and Celia Lozano.
 
 1. **Diagnostic trajectories of mental disorders in children and adolescents: a cohort study**. 2023 (article). *European Child and Adolescent Psychiatry*. Braulio Girela-Serrano, Carolina Miguélez-Fernández, Sofía Abascal-Peiró, Inmaculada Peñuelas-Calvo, Laura Jiménez-Muñoz, Manon Moreno, David Delgado-Gómez, Hugo J. Bello, Dasha Nicholls, Enrique Baca-García, Juan José Carballo, Alejandro Porras-Segovia. [https://doi.org/10.1007%2Fs00787-023-02254-0](https://doi.org/10.1007%2Fs00787-023-02254-0)
