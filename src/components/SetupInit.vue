@@ -21,10 +21,10 @@ export default defineComponent({
     async setDefaultLanguage(){
       const i18next = useI18n()
       console.log(i18next.locale.value)
-      if (i18next.locale.value.includes("es")){
-        this.setLanguage("es")
-      } else {
+      if (i18next.locale.value.includes("en")){
         this.setLanguage("en")
+      } else {
+        this.setLanguage("es")
       }
     },
     ...mapActions(useLanguage, ['setLanguage']),
