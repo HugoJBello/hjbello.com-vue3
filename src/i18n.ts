@@ -4,6 +4,7 @@ import es from './locales/es.json';
 
 const i18n = createI18n({
     legacy: false,
+    locale: window.navigator.language,
     fallbackLocale: 'es-ES',
     messages: {
         "en-US": en,

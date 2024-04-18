@@ -74,14 +74,14 @@
     created() {
         const locale = this.i18n.locale
         console.log(locale)
-        if (locale.value.includes("en")) {
-          this.language = "en"
-          this.setLanguage("en")
-          this.selected = "en"
-        } else {
+        if (locale.value == "es") {
           this.language = "es"
           this.setLanguage("es")
           this.selected = "es"
+        } else {
+          this.language = "en"
+          this.setLanguage("en")
+          this.selected = "en"
         }
 
         const languageStorage = useLanguage();
